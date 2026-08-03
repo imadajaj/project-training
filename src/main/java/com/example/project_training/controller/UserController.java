@@ -8,7 +8,7 @@ public class UserController {
 
     @GetMapping("/users")
     public String getMethodName() {
-        return "Hello user";
+        return "Hello user avec une nouvelle branch";
     }
     
 }
