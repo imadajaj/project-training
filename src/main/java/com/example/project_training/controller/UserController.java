@@ -15,5 +15,10 @@ public class UserController {
     public String getUseString() {
         return "get User";
     }
+
+    @GetMapping("/product")
+    public String getProductString() {
+        return "get product";
+    }
     
 }
