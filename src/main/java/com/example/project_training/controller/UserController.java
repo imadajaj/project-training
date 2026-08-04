@@ -10,5 +10,10 @@ public class UserController {
     public String getMethodName() {
         return "Hello user avec une nouvelle branch";
     }
+
+    @GetMapping("/user")
+    public String getUseString() {
+        return "get User";
+    }
     
 }
