@@ -7,5 +7,9 @@ public class OrderController {
 
     public String getProducts() {
         return "products";
+
+    }
+     public String getUsers() {
+        return "users";
     }
 }
