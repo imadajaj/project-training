@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+
+    container_name: spring-prod
+
+    restart: unless-stopped
+
+    ports:
+      - "8091:8091"
+
+    environment:
+      SPRING_PROFILES_ACTIVE: prod

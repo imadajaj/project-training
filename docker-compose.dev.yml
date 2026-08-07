@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+
+    container_name: spring-dev
+
+    ports:
+      - "8091:8091"
+
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+
+    volumes:
+      - .:/app
+      - ~/.m2:/root/.m2
